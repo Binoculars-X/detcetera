@@ -33,8 +33,10 @@ RUN pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.g
 
 RUN pip install --no-deps packaging ninja einops flash-attn xformers trl peft accelerate bitsandbytes
 
+# https://stackoverflow.com/questions/67998191/importerror-iprogress-not-found-please-update-jupyter-and-ipywidgets-although
 RUN pip install ipywidgets widgetsnbextension pandas-profiling
 
+# https://github.com/unslothai/unsloth/issues/702
 RUN pip install transformers==4.38.0
 
 # start jupyter lab

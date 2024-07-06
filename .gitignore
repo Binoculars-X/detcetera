@@ -19,6 +19,9 @@ mono_crash.*
 
 # Build results
 ml/outputs/
+ml/*model*/
+ml/llama.cpp/
+ml/_unsloth*/
 ml/.ipynb_checkpoints/
 [Dd]ebug/
 [Dd]ebugPublic/
